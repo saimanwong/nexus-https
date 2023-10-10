@@ -1,4 +1,4 @@
-FROM sonatype/nexus3
+FROM sonatype/nexus3:3.41.0
 
 LABEL maintainer="Brad Beck <bradley.beck+docker@gmail.com>"
 
