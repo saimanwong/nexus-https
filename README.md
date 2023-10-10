@@ -28,6 +28,8 @@ Variable               | Default Value | Description
 -----------------------|----------------------------------------|------------
 `PUBLIC_CERT`          |`/opt/sonatype/nexus/etc/ssl/cacert.pem`|the fully qualified container path for the CA certificate
 `PUBLIC_CERT_SUBJ`     |`/CN=localhost`                         |the subject used if the CA certificate is created
+`PUBLIC_CERT_SAN`      |`DNS:localhost`                         |the subject alternative name used if the CA certificate is created
+`PUBLIC_CERT_DAYS`     |`30`                                    |the expiry in days if the CA certificate is created
 `PRIVATE_KEY`          |`/opt/sonatype/nexus/etc/ssl/cakey.pem` |the fully qualified container path for the private certificate key
 `PRIVATE_KEY_PASSWORD` |`password`                  |the password for the private certificate key, used for `keystore.jks` if it is being generated
 
