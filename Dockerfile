@@ -6,6 +6,7 @@ ENV NEXUS_SSL=${NEXUS_HOME}/etc/ssl
 ENV PUBLIC_CERT=${NEXUS_SSL}/cacert.pem \
     PUBLIC_CERT_SUBJ=/CN=localhost \
     PUBLIC_CERT_SAN="DNS:localhost" \
+    PUBLIC_CERT_DAYS=30 \
     PRIVATE_KEY=${NEXUS_SSL}/cakey.pem \
     PRIVATE_KEY_PASSWORD=password
 
